@@ -26,8 +26,8 @@
         </StackPanel>
         <StackPanel Grid.Row="1" Grid.Column="1">
             <Image HorizontalAlignment="Left" Height="70" Grid.Row="1" Margin="0,0,0,20" VerticalAlignment="Top" Width="70" Source="C:\Users\DominikRevtak-STUDEN\OneDrive - Atlantic TU\Year 2\OOP\EXAMS\January Exam 2026\January Exam 2026\robot.png"/>
-            <Image HorizontalAlignment="Left" Height="70" Grid.Row="1" Margin="0,0,0,20" VerticalAlignment="Top" Width="70" Source="C:\Users\DominikRevtak-STUDEN\OneDrive - Atlantic TU\Year 2\OOP\EXAMS\January Exam 2026\January Exam 2026\robot.png"/>
-            <Image HorizontalAlignment="Left" Height="70" Grid.Row="1" Margin="0,0,0,20" VerticalAlignment="Top" Width="70" Source="C:\Users\DominikRevtak-STUDEN\OneDrive - Atlantic TU\Year 2\OOP\EXAMS\January Exam 2026\January Exam 2026\robot.png"/>
+            <Image HorizontalAlignment="Left" Height="70" Grid.Row="1" Margin="0,0,0,20" VerticalAlignment="Top" Width="70" Source="C:\Users\DominikRevtak-STUDEN\OneDrive - Atlantic TU\Year 2\OOP\EXAMS\January Exam 2026\January Exam 2026\household-robot.png"/>
+            <Image HorizontalAlignment="Left" Height="70" Grid.Row="1" Margin="0,0,0,20" VerticalAlignment="Top" Width="70" Source="C:\Users\DominikRevtak-STUDEN\OneDrive - Atlantic TU\Year 2\OOP\EXAMS\January Exam 2026\January Exam 2026\delivery-robot.png"/>
         </StackPanel>
         
         
