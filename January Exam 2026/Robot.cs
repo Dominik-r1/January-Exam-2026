@@ -45,7 +45,7 @@ namespace January_Exam_2026
      
         public override string ToString()
         {
-            return $"Robot Name: {RobotName} ]".ToString();
+            return $"{RobotName} - []".ToString();
         }
 
         //ENUMS

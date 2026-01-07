@@ -31,8 +31,12 @@ namespace January_Exam_2026
                 $"Battery Information:" +
                 $"{DisplayBatteryInformation()}".ToString();
         }
+        public override string ToString()
+        {
+            return $"{RobotName} - [Delivery Robot]".ToString();
+        }
 
-      
+
 
     }
 }

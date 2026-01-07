@@ -16,6 +16,8 @@ namespace January_Exam_2026
         public HouseholdRobot(string n, double cap, double cur)
             : base(n, cap, cur)
         {
+            //initiate list
+            Skills = new List<HouseholdSkill>();
             //every household robot gets Cleaning added to skills
             DownloadSkill(HouseholdSkill.Cleaning);
         }
@@ -30,7 +32,7 @@ namespace January_Exam_2026
             return $"I am a household robot\n" +
                 $"I can help with chores around the house\n\n" +
                 $"Household Robot Skills:" +
-                $"{Skills}\n\n" +
+                $"{Skills.ToList()}\n\n" +
                 $"Battery Information:\n" +
                 $"{DisplayBatteryInformation()}".ToString();
         }
@@ -38,7 +40,10 @@ namespace January_Exam_2026
         public void DownloadSkill(HouseholdSkill skill)
         {
             Skills.Add(skill);
-            Skills
+        }
+        public override string ToString()
+        {
+            return $"{RobotName} - [Household Robot]".ToString();
         }
     }
 }
