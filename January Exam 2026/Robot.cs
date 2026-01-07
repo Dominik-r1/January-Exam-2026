@@ -37,5 +37,21 @@ namespace January_Exam_2026
         {
             return $"Robot Name: {RobotName} ]".ToString();
         }
+
+        //ENUMS
+        public enum HouseholdSkill
+        {
+            Cooking,
+            Cleaning,
+            Laundry,
+            Gardening,
+            ChildCare
+        }
+        public enum DeliveryMode
+        {
+            Walking,
+            Driving,
+            Flying
+        }
     }
 }
