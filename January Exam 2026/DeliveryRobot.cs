@@ -12,6 +12,15 @@ namespace January_Exam_2026
         public DeliveryMode ModeOfDelivery { get; set; }
         public double MaxLoadKG { get; set; }
 
+        //constructor
+        public DeliveryRobot(string n, double cap, double cur)
+            : base(n, cap, cur)
+        {
+
+        }
+        //ctor for when only name given - other values set zero
+        public DeliveryRobot(string n) : this(n, 0, 0) { }
+
         //methods
         public override string DescribeRobot()
         {
@@ -22,6 +31,8 @@ namespace January_Exam_2026
                 $"Battery Information:" +
                 $"{DisplayBatteryInformation()}".ToString();
         }
+
+      
 
     }
 }

@@ -15,6 +15,16 @@ namespace January_Exam_2026
         public double CurrentPowerKWH { get; set; }
 
         //constructors
+        public Robot(string n, double cap, double cur)
+        {
+            RobotName = n;
+            PowerCapacityKWH = cap;
+            CurrentPowerKWH = cur; 
+        }
+        public Robot(string n)
+        {
+            RobotName = n;
+        }
 
         //methods
         //returns battery level as a percentage

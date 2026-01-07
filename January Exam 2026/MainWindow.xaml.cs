@@ -24,5 +24,25 @@ namespace January_Exam_2026
         {
             InitializeComponent();
         }
+
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            HouseholdRobot r1 = new HouseholdRobot("HouseBot");
+            HouseholdRobot r2 = new HouseholdRobot("GardenMate");
+            HouseholdRobot r3 = new HouseholdRobot("Housemate 3000");
+            DeliveryRobot r4 = new DeliveryRobot("DeliverBot");
+            DeliveryRobot r5 = new DeliveryRobot("FlyBot");
+            DeliveryRobot r6 = new DeliveryRobot("Driver");
+
+            List<Robot> robots = new List<Robot>() { r1, r2, r3, r4, r5, r6 };
+
+            lbxRobotList.ItemsSource = robots;
+
+        }
+
+        private void lbxRobotList_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
     }
 }

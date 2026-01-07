@@ -9,7 +9,19 @@ namespace January_Exam_2026
     internal class HouseholdRobot : Robot
     {
         //properties
-        private List<HouseholdSkill> Skills { get; set; }
+        public List<HouseholdSkill> Skills { get; set; }
+
+
+        //constructor
+        public HouseholdRobot(string n, double cap, double cur)
+            : base(n, cap, cur)
+        {
+            //every household robot gets Cleaning added to skills
+            DownloadSkill(HouseholdSkill.Cleaning);
+        }
+        //ctor for when only name given - other values set zero
+        public HouseholdRobot(string n) : this(n, 0, 0) { }
+
 
         //methods
         public override string DescribeRobot()
@@ -21,6 +33,12 @@ namespace January_Exam_2026
                 $"{Skills}\n\n" +
                 $"Battery Information:\n" +
                 $"{DisplayBatteryInformation()}".ToString();
+        }
+
+        public void DownloadSkill(HouseholdSkill skill)
+        {
+            Skills.Add(skill);
+            Skills
         }
     }
 }
