@@ -7,6 +7,39 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="9*"/>
+            <RowDefinition Height="53*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="20*"/>
+            <ColumnDefinition Width="20*"/>
+            <ColumnDefinition Width="30*"/>
+            <ColumnDefinition Width="30*"/>
+        </Grid.ColumnDefinitions>
+        <!--Filters-->
+        <Label Content="Filter" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="22" Grid.ColumnSpan="2"/>
+        <StackPanel Grid.Row="1">
+            <RadioButton Content="ALL ROBOTS" HorizontalAlignment="Left" Grid.Row="1" Margin="20,35,0,70" VerticalAlignment="Top"/>
+            <RadioButton Content="HOUSEHOLD" HorizontalAlignment="Left" Grid.Row="1" Margin="20,0,0,70" VerticalAlignment="Top"/>
+            <RadioButton Content="DELIVERY" HorizontalAlignment="Left" Grid.Row="1" Margin="20,0,0,70" VerticalAlignment="Top"/>
+        </StackPanel>
+        <StackPanel Grid.Row="1" Grid.Column="1">
+            <Image HorizontalAlignment="Left" Height="70" Grid.Row="1" Margin="0,0,0,20" VerticalAlignment="Top" Width="70" Source="C:\Users\DominikRevtak-STUDEN\OneDrive - Atlantic TU\Year 2\OOP\EXAMS\January Exam 2026\January Exam 2026\robot.png"/>
+            <Image HorizontalAlignment="Left" Height="70" Grid.Row="1" Margin="0,0,0,20" VerticalAlignment="Top" Width="70" Source="C:\Users\DominikRevtak-STUDEN\OneDrive - Atlantic TU\Year 2\OOP\EXAMS\January Exam 2026\January Exam 2026\robot.png"/>
+            <Image HorizontalAlignment="Left" Height="70" Grid.Row="1" Margin="0,0,0,20" VerticalAlignment="Top" Width="70" Source="C:\Users\DominikRevtak-STUDEN\OneDrive - Atlantic TU\Year 2\OOP\EXAMS\January Exam 2026\January Exam 2026\robot.png"/>
+        </StackPanel>
         
+        
+        <!--Filters-->
+        <Label Content="Robot List" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="22"/>
+        <ListBox Grid.Column="2" d:ItemsSource="{d:SampleData ItemCount=5}" Grid.Row="1"/>
+        <!--Filters-->
+        <Label Content="Robot Details" Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="22"/>
+        <TextBlock Grid.Column="2" HorizontalAlignment="Left" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Grid.ColumnSpan="2" Margin="286,63,0,0" Grid.RowSpan="2"/>
+        <Button x:Name="btnCharge" Grid.Column="3" Content="Charge" HorizontalAlignment="Center" Margin="15" Width="130" Height="30" Grid.Row="1" VerticalAlignment="Bottom"/>
+
+
+
     </Grid>
 </Window>
