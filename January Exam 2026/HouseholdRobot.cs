@@ -9,20 +9,18 @@ namespace January_Exam_2026
     internal class HouseholdRobot : Robot
     {
         //properties
-        private List<HouseholdSkill>
+        private List<HouseholdSkill> Skills { get; set; }
 
         //methods
         public override string DescribeRobot()
         {
             //temporarily hardcoded
-            return $"I am a {RobotName} robot\n" +
-                $"I can help with chores aroung the house\n\n" +
-                $"{RobotName} Robot Skills:" +
-                $"-Skills list-\n\n" +
+            return $"I am a household robot\n" +
+                $"I can help with chores around the house\n\n" +
+                $"Household Robot Skills:" +
+                $"{Skills}\n\n" +
                 $"Battery Information:\n" +
                 $"{DisplayBatteryInformation()}".ToString();
-
-            
         }
     }
 }
